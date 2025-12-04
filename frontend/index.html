@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IR Playbook Training</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+       <!---- Header Section ---->
+    <header>
+        <h1>Incident Response Training</h1>
+        <p class=" subtitle">Mater IR procedure through interactive scenarios</p>
+    </header>
+    <!-- Welcome Section -->
+     <main id = "welcome-screen">
+        <div class="welcome-content">
+            <h2>Welcome, Security Professional!</h2>
+            <p>Practice your incident response skills through realistic scenarios.</p>
+
+            <div class="features">
+                <div class="feature">
+                    <span class="icon">⚡</span>
+                    <h3>Real Scenarios</h3>
+                    <p>Face actual IR situations</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">🎯</span>
+                    <h3>Score & Learn</h3>
+                    <p>Get instant feedback</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">🏆</span>
+                    <h3>Compete</h3>
+                    <p>Climb the leaderboard</p>
+                </div>
+            </div>
+        <!-- Player Name Input -->
+        <div class="input-section">
+            <label for="playerName">Enter Your Name:</label>
+            <input type="text" id="playerName" placeholder="Your name" maxlength="20">
+        </div>
+
+ <!-- Start Button -->
+         <button id="startBtn" class="btn-primary">Start Training</button>
+
+            <button id="leaderboardBtn" class="btn-secondary">View Leaderboard</button>
+        </div>
+    </main>
+
+ <!-- Game Container (Hidden initially) -->
+        <div id="game-container" style="display: none;">
+    <!-- Phaser game will load here -->
+        </div>
+ <!-- Leaderboard Section (Hidden initially) -->
+        <div id="leaderboard-screen" style="display: none;">
+            <h2>🏆 Top IR Professionals</h2>
+            <div id="leaderboard-list"></div>
+            <button id="backBtn" class="btn-secondary">Back to Home</button>
+        </div>
+ <!-- Footer -->
+        <footer>
+            <p>© 2024 IR Training Platform | Practice Makes Perfect</p>
+        </footer>
+    </div>
+ <script src="game.js"></script>
+
+</body>
+</html>
